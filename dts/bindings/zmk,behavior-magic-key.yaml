@@ -1,0 +1,4 @@
+description: |
+  A special custom behavior that performs a predefined action when pressed.
+
+compatible: "zmk,behavior-magic-key"

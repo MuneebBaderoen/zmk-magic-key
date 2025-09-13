@@ -1,0 +1,8 @@
+# This is a basic Kconfig file to enable the new module.
+# You can add more configuration options here if needed.
+
+DT_COMPAT_ZMK_BEHAVIOR_MAGIC_KEY := "zmk,behavior-magic-key"
+
+config ZMK_BEHAVIOR_MAGIC_KEY
+    bool "Enable Magic Key behavior"
+    default $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_MAGIC_KEY))
